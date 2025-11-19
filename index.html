@@ -101,7 +101,7 @@
               >Contact Me</a
             >
             <a
-              href="Usama-Tahir-Python-FastAPI-developer.pdf" download
+              href="Usama-Tahir-Python-Resume-20251118.pdf" download
               class="px-8 py-3 bg-purple-600 hover:bg-purple-700 rounded-full font-medium transition flex items-center justify-center"
             >
               <i data-feather="download" class="w-5 h-5 mr-2"></i> Download Resume
@@ -231,7 +231,7 @@
               </div>
               <h3 class="font-bold mb-2">Database</h3>
               <p class="text-gray-300 text-sm">
-                MySQL, MongoDB, PostgreSQL, Firebase
+                MySQL, MongoDB, PostgreSQL
               </p>
             </div>
 
@@ -266,152 +266,269 @@
             Featured Projects
           </h2>
 
-          <!-- Project 1 -->
-          <div
-            class="flex flex-col lg:flex-row items-center gap-12 mb-20"
-            data-aos="fade-up"
-          >
-            <div class="lg:w-1/2">
-              <div class="glass-card p-1 rounded-2xl overflow-hidden">
-                <img
-                  src="http://static.photos/technology/640x360/43"
-                  alt="Project 1"
-                  class="rounded-2xl w-full"
-                />
-              </div>
-            </div>
-            <div class="lg:w-1/2">
-              <h3 class="text-2xl font-bold mb-2">E-Commerce Platform</h3>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span
-                  class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm"
-                  >React</span
-                >
-                <span
-                  class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm"
-                  >Node.js</span
-                >
-                <span
-                  class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm"
-                  >MongoDB</span
-                >
-              </div>
-              <p class="text-gray-300 mb-6">
-                A full-featured e-commerce platform with product management,
-                shopping cart, payment processing, and user authentication.
-              </p>
-              <div class="flex flex-wrap gap-4">
-                <a
-                  href="#"
-                  class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full text-sm font-medium transition"
-                  >Live Demo</a
-                >
-                <a
-                  href="#"
-                  class="px-4 py-2 glass-card hover:bg-white/10 rounded-full text-sm font-medium transition"
-                  >View Code</a
-                >
-              </div>
-            </div>
-          </div>
+          <!-- Projects: simplified text-only cards for backend projects -->
+          <!--
+            How to add a project:
+            - Duplicate one of the .project-card blocks below
+            - Edit the .project-title, .project-desc, and tech tags
+            - Optionally add a Live URL and/or GitHub URL
+          -->
 
-          <!-- Project 2 -->
-          <div
-            class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-20"
-            data-aos="fade-up"
-          >
-            <div class="lg:w-1/2">
-              <div class="glass-card p-1 rounded-2xl overflow-hidden">
-                <img
-                  src="http://static.photos/technology/640x360/44"
-                  alt="Project 2"
-                  class="rounded-2xl w-full"
-                />
-              </div>
-            </div>
-            <div class="lg:w-1/2">
-              <h3 class="text-2xl font-bold mb-2">Task Management App</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Project Card -->
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Humkinar Web Crawler</h3>
+              <p class="project-desc text-gray-300 mb-4">Developed custom Python-based web crawlers for Humkinar.pk, designed to extract and index Urdu content from the web. The system filtered and fetched only relevant Urdu news, blog posts, and articles, including targeted scraping from predefined Urdu content sources to enhance the platform’s search index with high-quality, language-specific data.</p>
               <div class="flex flex-wrap gap-2 mb-4">
-                <span
-                  class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm"
-                  >Vue.js</span
-                >
-                <span
-                  class="px-3 py-1 bg-pink-600/20 text-pink-400 rounded-full text-sm"
-                  >Firebase</span
-                >
-                <span
-                  class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm"
-                  >Tailwind</span
-                >
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Selenium</span>
+                <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">Redis</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Solr</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Docker</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
               </div>
-              <p class="text-gray-300 mb-6">
-                A collaborative task management application with real-time
-                updates, drag-and-drop functionality, and team management
-                features.
-              </p>
-              <div class="flex flex-wrap gap-4">
-                <a
-                  href="#"
-                  class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full text-sm font-medium transition"
-                  >Live Demo</a
-                >
-                <a
-                  href="#"
-                  class="px-4 py-2 glass-card hover:bg-white/10 rounded-full text-sm font-medium transition"
-                  >View Code</a
-                >
+              <div class="flex flex-wrap gap-3">
+                <!-- Optional: if you don't have links, remove the anchor or set href to # -->
+                <a href="https://www.humkinar.pk/" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full text-sm font-medium transition">Live URL</a>
               </div>
             </div>
-          </div>
 
-          <!-- Project 3 -->
-          <div
-            class="flex flex-col lg:flex-row items-center gap-12"
-            data-aos="fade-up"
-          >
-            <div class="lg:w-1/2">
-              <div class="glass-card p-1 rounded-2xl overflow-hidden">
-                <img
-                  src="http://static.photos/technology/640x360/45"
-                  alt="Project 3"
-                  class="rounded-2xl w-full"
-                />
-              </div>
-            </div>
-            <div class="lg:w-1/2">
-              <h3 class="text-2xl font-bold mb-2">AI-Powered Analytics</h3>
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Humkinar Search Service</h3>
+              <p class="project-desc text-gray-300 mb-4">Designed and developed the search API service for Humkinar Urdu Search Engine, providing RESTful endpoints for third-party integrations. Implemented authentication, rate limiting, and quota management to ensure secure and controlled access to search functionalities across external consumers.</p>
               <div class="flex flex-wrap gap-2 mb-4">
-                <span
-                  class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm"
-                  >Python</span
-                >
-                <span
-                  class="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm"
-                  >TensorFlow</span
-                >
-                <span
-                  class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm"
-                  >FastAPI</span
-                >
-              </div>
-              <p class="text-gray-300 mb-6">
-                An analytics dashboard that uses machine learning to provide
-                insights and predictions based on business data.
-              </p>
-              <div class="flex flex-wrap gap-4">
-                <a
-                  href="#"
-                  class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full text-sm font-medium transition"
-                  >Live Demo</a
-                >
-                <a
-                  href="#"
-                  class="px-4 py-2 glass-card hover:bg-white/10 rounded-full text-sm font-medium transition"
-                  >View Code</a
-                >
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Django</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">Redis</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Solr</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Docker</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
               </div>
             </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Humkinar Adserver</h3>
+              <p class="project-desc text-gray-300 mb-4">Developed a full-featured adserver for the Humkinar Urdu Search Engine, including core functionalities such as ad creation, retrieval, and display logic based on models like CPP (Cost Per Placement) and CPI (Cost Per Impression). Designed scalable APIs and backend architecture to support targeted ad delivery within search results.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Django</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">Redis</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Docker</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Political Sentiment Analysis and Visualization System</h3>
+              <p class="project-desc text-gray-300 mb-4">Developed a system to analyze Twitter data for political sentiment using NLP techniques. Designed the backend pipeline to collect, process, and classify tweets, and built interactive visualizations to display sentiment trends over time across different political entities and topics.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">TwitterAPI</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">Redis</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Docker</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Epidemic Surveillance System</h3>
+              <p class="project-desc text-gray-300 mb-4">Built a real-time epidemic monitoring system using data from Twitter and news sources, focusing on early detection of disease outbreaks. Implemented data collection pipelines, keyword-based filtering, and classification models to identify health-related trends, with dashboards for visualization and alerting.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">TwitterAPI</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">Redis</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Docker</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Dataprep</h3>
+              <p class="project-desc text-gray-300 mb-4">Core service for exploring, cleaning, and preparing structured and unstructured data for analysis, reporting, and machine learning in AI projects.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Django</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">Dask</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Docker</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Dataset Catalog</h3>
+              <p class="project-desc text-gray-300 mb-4">Core service managing information on datasets used by different services and ingested at storage.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Flask</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Docker</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">ML-Metastore</h3>
+              <p class="project-desc text-gray-300 mb-4">Core service tracking activities conducted by data scientists and storing their meta data.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Django</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">MongoDB</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Docker</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Foundation Data Ingest</h3>
+              <p class="project-desc text-gray-300 mb-4">Desktop utility offering connectors to transfer data between services and managing data pipelines.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">.NET Core</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Docker</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Hermes</h3>
+              <p class="project-desc text-gray-300 mb-4">Core service to ingest high-volume time series data from sensors, process it through data cleaning pipelines, and run ML models for fault detection in oil & gas industries and weather prediction in environmental sectors.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Flask</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Docker</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">AI Basketball Training Application (Backend)</h3>
+              <p class="project-desc text-gray-300 mb-4">Engineered the backend of a basketball coaching app using Django, FastAPI, PostgreSQL, and Docker-based microservices. Implemented core business logic, APIs, Twilio-powered messaging, and subscription/payment automation, ensuring a secure and scalable backend architecture.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Django</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">FastAPI</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Microservices</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">AWS (SES, S3, Cloudfront, Lambda)</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Docker</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Fancoin Application (Backend)</h3>
+              <p class="project-desc text-gray-300 mb-4">Built a sports ticketing and seat booking application for managing reservations across multiple stadiums. Implemented features for event selection, real-time seat availability, and secure booking workflows to enhance the fan experience and streamline stadium operations.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Django</span>
+                <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">Stripe</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Docker</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">ETL Application (Backend)</h3>
+              <p class="project-desc text-gray-300 mb-4">Developed a flexible ETL-based data integration system supporting multiple data sources and destinations. Designed dynamic pipelines to extract, transform, and load data, with support for scheduling, source-specific processing, and automated delivery to various target systems.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">FastAPI</span>
+                <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">AirFlow</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Clickhouse</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Web Scrappers</h3>
+              <p class="project-desc text-gray-300 mb-4">Developed custom web scrapers for a wide range of websites, including e-commerce platforms, price comparison sites, and product catalogs. Handled both static and dynamic content scraping, using tools such as Requests, BeautifulSoup, lxml, Selenium, playwright, and Scrapy. Extracted and structured data based on client requirements, delivering results in formats like Excel, CSV, or JSON. Built scraping workflows that handled pagination, login sessions, captchas, and JavaScript-rendered content to ensure reliable and comprehensive data extraction.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Selenium</span>
+                <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">Requests</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">BeautifulSoup</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Paybag Application (Backend)</h3>
+              <p class="project-desc text-gray-300 mb-4">Developed the backend for a parcel delivery platform enabling users to send and receive packages overseas through individual travelers. Implemented features such as bidding on packages, traveler matching, secure communication, and transaction handling to support a peer-to-peer logistics model.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Django</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Twilio</span>
+                <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">Stripe</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Electronic Health Record (Base)</h3>
+              <p class="project-desc text-gray-300 mb-4">Developed the initial backend architecture for an EHR software using Python FastAPI, including user authentication, role-based access control for doctors, patients, and receptionists, and modules for medical record management, ensuring secure and structured healthcare data handling.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">FastAPI</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">SQLAlchemy</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <a href="https://github.com/usama124/ehr_v2_base" class="px-4 py-2 glass-card hover:bg-white/10 rounded-full text-sm font-medium transition">GitHub</a>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Overmind Project</h3>
+              <p class="project-desc text-gray-300 mb-4">Developed the backend for Overmind, a server management application that automates WordPress setup and configuration through a user-friendly GUI. Enabled users to install WordPress, manage versions, plugins, libraries, and handle multiple domains without using terminal commands. Integrated with DirectAdmin to streamline server and domain management.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">FastAPI</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">Django</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">SQLAlchemy</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">DirectAdmin</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">Datatera</h3>
+              <p class="project-desc text-gray-300 mb-4">Worked as a freelance backend developer for an intelligent AI agent platform, where I built REST APIs that powered the frontend system. I integrated the AI models provided by the product owner/CEO to enable key capabilities such as OCR (image-to-text), speech-to-text, PDF text extraction, file format conversions, translation, summarization, keyword extraction, sentiment analysis, and basic document classification. My focus was on backend architecture, API development, and seamless integration of the provided AI models to support automated ML-driven workflows.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">FastAPI</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <a href="https://www.datatera.ai/" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full text-sm font-medium transition">Live URL</a>
+              </div>
+            </div>
+
+            <div class="glass-card p-6 rounded-2xl project-card" data-aos="fade-up">
+              <h3 class="project-title text-2xl font-bold mb-2">KintoHR (Backend)</h3>
+              <p class="project-desc text-gray-300 mb-4">This is an in-progress multi-tenant HR Management System developed using FastAPI and Tortoise ORM. It enables organizations to manage employees, departments, designations, and detailed user profiles across multiple tenants (companies), each identified by a unique subdomain. The system includes features like role-based access control (e.g., Super Admin, HR Manager, Department Head), employee onboarding, department leadership assignment, and tenant-specific employee code generation. Designed for scalability and security, it provides a modular architecture to support growing HR operational needs.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
+                <span class="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-sm">FastAPI</span>
+                <span class="px-3 py-1 bg-green-600/20 text-green-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-yellow-600/20 text-yellow-400 rounded-full text-sm">Tortoise ORM</span>
+                <span class="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">GIT</span>
+              </div>
+              <div class="flex flex-wrap gap-3">
+                <a href="https://github.com/usama124/kinto-hr-be" class="px-4 py-2 glass-card hover:bg-white/10 rounded-full text-sm font-medium transition">Github</a>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -426,6 +543,7 @@
             Get In Touch
           </h2>
           <div class="glass-card p-8 rounded-2xl" data-aos="fade-up">
+            <form id="contactForm" class="space-y-6" action="https://formspree.io/f/xgvnaryd" method="POST"c ccx>
             <form id="contactForm" class="space-y-6" action="https://formspree.io/f/xgvnaryd" method="POST">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
