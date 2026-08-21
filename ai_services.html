@@ -61,20 +61,6 @@
       -webkit-text-fill-color: transparent;
     }
 
-    /* API Key Field Header */
-    .auth-container {
-      margin-bottom: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    .auth-container label {
-      font-size: 0.85rem;
-      color: #00dfd8;
-      font-weight: 600;
-    }
-
     /* Service Navigation */
     .nav-tabs {
       display: flex;
@@ -120,7 +106,7 @@
       color: #aaa;
     }
 
-    input[type="text"], input[type="password"] {
+    input[type="text"] {
       width: 100%;
       background: rgba(0, 0, 0, 0.2);
       border: 1px solid rgba(255, 255, 255, 0.15);
@@ -131,7 +117,7 @@
       outline: none;
     }
 
-    input[type="text"]:focus, input[type="password"]:focus {
+    input[type="text"]:focus {
       border-color: #7928ca;
     }
 
@@ -188,11 +174,6 @@
       <p style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Select a service and run prompt queries against your FastAPI LLM server.</p>
     </header>
 
-    <!-- <div class="auth-container">
-      <label for="apiKeyInput">API Authentication Key (X-API-Key):</label>
-      <input type="password" id="apiKeyInput" placeholder="Enter your API Key..." oninput="saveApiKey()">
-    </div> -->
-
     <div class="nav-tabs">
       <button class="tab-btn active" onclick="selectService('chat', 'Ask me anything...', 'Send')">Chatbot</button>
       <button class="tab-btn" onclick="selectService('summarize', 'Paste long text here to summarize...', 'Summarize')">Summarizer</button>
@@ -218,21 +199,8 @@
   </div>
 
   <script>
-    const API_BASE_URL = "/api-proxy.php?endpoint=";
+    const API_BASE_URL = "api-proxy.php?endpoint=";
     let activeEndpoint = "chat";
-
-    // Auto-load stored API key from local storage on page load
-    // window.addEventListener('DOMContentLoaded', () => {
-    //   const savedKey = localStorage.getItem('x_api_key');
-    //   if (savedKey) {
-    //     document.getElementById('apiKeyInput').value = savedKey;
-    //   }
-    // });
-
-    // function saveApiKey() {
-    //   const key = document.getElementById('apiKeyInput').value.trim();
-    //   localStorage.setItem('x_api_key', key);
-    // }
 
     function selectService(endpoint, placeholderText, buttonText) {
       activeEndpoint = endpoint;
@@ -257,15 +225,7 @@
     async function sendRequest() {
       const inputField = document.getElementById('userInput');
       const outputDiv = document.getElementById('output');
-      // const apiKeyInput = document.getElementById('apiKeyInput');
-
       const rawPromptText = inputField.value.trim();
-      // const apiKey = apiKeyInput.value.trim();
-
-      // if (!apiKey) {
-      //   outputDiv.innerHTML = '<span style="color: #ffaa00;">Error: Please enter an API Key in the field above.</span>';
-      //   return;
-      // }
 
       if (!rawPromptText) return;
 
@@ -279,18 +239,17 @@
       outputDiv.innerHTML = '<span style="color: #aaa;">Generating response...</span>';
 
       try {
-        const response = await fetch(`${API_BASE_URL}/${activeEndpoint}`, {
+        const response = await fetch(`${API_BASE_URL}${activeEndpoint}`, {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
-            // 'X-API-Key': apiKey
+            'Content-Type': 'application/json'
           },
           body: JSON.stringify({ text: finalPrompt })
         });
 
         if (!response.ok) {
           if (response.status === 401 || response.status === 403) {
-            throw new Error(`Unauthorized (Status ${response.status}): Invalid X-API-Key provided.`);
+            throw new Error(`Unauthorized (Status ${response.status}): Invalid API Key on cPanel proxy.`);
           }
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
