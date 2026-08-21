@@ -188,10 +188,10 @@
       <p style="color: #aaa; font-size: 0.9rem; margin-top: 5px;">Select a service and run prompt queries against your FastAPI LLM server.</p>
     </header>
 
-    <div class="auth-container">
+    <!-- <div class="auth-container">
       <label for="apiKeyInput">API Authentication Key (X-API-Key):</label>
       <input type="password" id="apiKeyInput" placeholder="Enter your API Key..." oninput="saveApiKey()">
-    </div>
+    </div> -->
 
     <div class="nav-tabs">
       <button class="tab-btn active" onclick="selectService('chat', 'Ask me anything...', 'Send')">Chatbot</button>
@@ -222,17 +222,17 @@
     let activeEndpoint = "chat";
 
     // Auto-load stored API key from local storage on page load
-    window.addEventListener('DOMContentLoaded', () => {
-      const savedKey = localStorage.getItem('x_api_key');
-      if (savedKey) {
-        document.getElementById('apiKeyInput').value = savedKey;
-      }
-    });
+    // window.addEventListener('DOMContentLoaded', () => {
+    //   const savedKey = localStorage.getItem('x_api_key');
+    //   if (savedKey) {
+    //     document.getElementById('apiKeyInput').value = savedKey;
+    //   }
+    // });
 
-    function saveApiKey() {
-      const key = document.getElementById('apiKeyInput').value.trim();
-      localStorage.setItem('x_api_key', key);
-    }
+    // function saveApiKey() {
+    //   const key = document.getElementById('apiKeyInput').value.trim();
+    //   localStorage.setItem('x_api_key', key);
+    // }
 
     function selectService(endpoint, placeholderText, buttonText) {
       activeEndpoint = endpoint;
@@ -257,15 +257,15 @@
     async function sendRequest() {
       const inputField = document.getElementById('userInput');
       const outputDiv = document.getElementById('output');
-      const apiKeyInput = document.getElementById('apiKeyInput');
+      // const apiKeyInput = document.getElementById('apiKeyInput');
 
       const rawPromptText = inputField.value.trim();
-      const apiKey = apiKeyInput.value.trim();
+      // const apiKey = apiKeyInput.value.trim();
 
-      if (!apiKey) {
-        outputDiv.innerHTML = '<span style="color: #ffaa00;">Error: Please enter an API Key in the field above.</span>';
-        return;
-      }
+      // if (!apiKey) {
+      //   outputDiv.innerHTML = '<span style="color: #ffaa00;">Error: Please enter an API Key in the field above.</span>';
+      //   return;
+      // }
 
       if (!rawPromptText) return;
 
